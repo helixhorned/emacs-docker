@@ -1,9 +1,7 @@
 #!/bin/bash
 
-source_rcu_tar="$1"
-
 BASE_IMAGE_PREFIX=ubuntu:mantic
-BASE_IMAGE_DATE=-20230712
+BASE_IMAGE_DATE=-20231011
 BASE_IMAGE="${BASE_IMAGE_PREFIX}${BASE_IMAGE_DATE}"
 
 # NOTE: the Ubuntu distro codename will become the image's tag.
