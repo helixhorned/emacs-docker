@@ -72,6 +72,13 @@ if [ -n "$dirSuffix" ]; then
     echo "INFO: Mounts from '$prefixDir' of the host into '$guestHome' of the container:"
     for ((i=0; i < n; i++)) do
         dirSuffix="${mountDirSuffixes[$i]}"
+        path="$prefixDir/$dirSuffix"
+
+        if [ ! -e "$path" ]; then
+            echo "  SKIPPED: $dirSuffix"
+            continue
+        fi
+
         echo "  $mountKind: $dirSuffix"
 
         j="$((2*i))"
