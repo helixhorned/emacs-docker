@@ -1,7 +1,7 @@
 #!/bin/bash
 
-BASE_IMAGE_PREFIX=ubuntu:mantic
-BASE_IMAGE_DATE=-20231011
+BASE_IMAGE_PREFIX=ubuntu:noble
+BASE_IMAGE_DATE=-20240605
 BASE_IMAGE="${BASE_IMAGE_PREFIX}${BASE_IMAGE_DATE}"
 
 # NOTE: the Ubuntu distro codename will become the image's tag.

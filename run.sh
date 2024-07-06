@@ -103,4 +103,4 @@ exec docker run -it --rm \
        -u ubuntu \
        "${MountArgs[@]}" \
        "${EntryPointArgs[@]}" \
-       emacs/ubuntu:mantic
+       emacs/ubuntu:noble
